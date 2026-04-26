@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enzo Dash</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="menu">
+  <h1>ENZO DASH</h1>
+  <button onclick="startGame()">PLAY</button>
+  <button onclick="togglePractice()">PRACTICE: OFF</button>
+  <button onclick="openShop()">SHOP</button>
+</div>
+
+<div id="shop" class="hidden">
+  <h2>SHOP</h2>
+  <p>Coins: <span id="coinDisplay">0</span></p>
+
+  <button onclick="buySkin('red', 10)">Red</button>
+  <button onclick="buySkin('cyan', 15)">Cyan</button>
+  <button onclick="buySkin('yellow', 20)">Yellow</button>
+
+  <br><br>
+  <button onclick="closeShop()">BACK</button>
+</div>
+
+<canvas id="gameCanvas"></canvas>
+
+<script src="game.js"></script>
+</body>
+</html>
